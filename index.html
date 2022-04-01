@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>放送音源</title>
+  <style>
+  .box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 2px #000000;
+}
+.box1 p {
+    margin: 0;
+    padding: 0;
+}
+
+  .box3 {
+      padding: 0.5em 1em;
+      margin: 2em 0;
+      color: #2c2c2f;
+      background: #cde4ff;/*背景色*/
+  }
+  .box3 p {
+      margin: 0;
+      padding: 0;
+  }
+
+  div p {
+
+  display: inline-block;
+
+}
+</style>
+
+<script type="text/javascript">
+
+    var audioElem;
+
+    function PlaySoundA() {
+      audioElem = new Audio();
+      audioElem.src = "sound/BGM-P-A.mp3";
+      audioElem.play();
+    }
+
+    function StopSound(){
+      audioElem.pause();
+    }
+
+    function PlaySoundB() {
+      audioElem = new Audio();
+      audioElem.src = "sound/gohome.mp3";
+      audioElem.play();
+    }
+
+
+  </script>
+</head>
+<body>
+      <h1>学校校内放送用音源</h1>
+     <h5>⚠︎再生前に放送機器との接続を確認してください。</h5>
+
+<div class="box3">
+
+  <h3>パターンA</h3>
+<h5>サウンドファクトリー社のフリー音源を編集して作成しました。</h5>
+<a href="javascript:void(0);" onclick="PlaySoundA();">▸再生</a><br/>
+<a href="javascript:void(0);" onclick="StopSound();">■停止</a><br />
+</div>
+<div class="box3">
+<h3>新音源　家路</h3>
+<h5>TOA社のML1000などの機器に収録されている音源を録音しました</h5>
+<a href="javascript:void(0);" onclick="PlaySoundB();">▸再生</a><br/>
+<a href="javascript:void(0);" onclick="StopSound();">■停止</a><br />
+
+</div>
+</body>
+</html>
