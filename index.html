@@ -51,7 +51,11 @@ alert('放送機器との接続を行ってください。');
       audioElem.src = "sound/gohome.mp3";
       audioElem.play();
     }
-
+  function PlaySoundC() {
+      audioElem = new Audio();
+      audioElem.src = "sound/BGM-P-B 1 - 2022:04:03 22.43.m4a"
+     audioElem.play();
+    }
 
   </script>
 </head>
@@ -62,13 +66,20 @@ alert('放送機器との接続を行ってください。');
 <div class="box3">
 
   <h3>パターンA</h3>
-<h5>サウンドファクトリー社のフリー音源を編集して作成しました。</h5>
+<h5>フリー音源を編集して作成</h5>
 <a href="javascript:void(0);" onclick="PlaySoundA();">▸再生</a><br/>
 <a href="javascript:void(0);" onclick="StopSound();">■停止</a><br />
 </div>
+  
+  <h3>パターンB</h3>
+<h5>フリー音源を編集して作成</h5>
+<a href="javascript:void(0);" onclick="PlaySoundC();">▸再生</a><br/>
+<a href="javascript:void(0);" onclick="StopSound();">■停止</a><br />
+</div>
+  
 <div class="box3">
 <h3>新音源　家路</h3>
-<h5>TOA社のML1000などの機器に収録されている音源を録音しました</h5>
+<h5>TOA社のML1000などの機器に収録されている音源を録音</h5>
 <a href="javascript:void(0);" onclick="PlaySoundB();">▸再生</a><br/>
 <a href="javascript:void(0);" onclick="StopSound();">■停止</a><br />
 
